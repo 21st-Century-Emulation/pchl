@@ -1,0 +1,17 @@
+{
+	"name": "Kotlin",
+	"dockerFile": "Dockerfile",
+
+	"settings":{
+		"java.home": "/opt/java/openjdk",
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	"appPort": [8080],
+
+	"extensions": [
+		"vscjava.vscode-java-pack",
+		"redhat.vscode-xml",
+		"fwcd.kotlin"
+	]
+}

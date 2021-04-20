@@ -1,0 +1,7 @@
+.devcontainer/
+.gradle/
+.vscode/
+bin/
+build/
+test/
+test.sh
