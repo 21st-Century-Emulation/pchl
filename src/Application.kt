@@ -31,6 +31,10 @@ fun Application.module(testing: Boolean = false) {
             cpu.state.cycles += 5;
             call.respond(cpu);
         }
+
+        get("/status") {
+            call.respond("Healthy");
+        }
     }
 }
 
