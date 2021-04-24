@@ -12,7 +12,7 @@ data class CpuFlags(var sign: Boolean = false, var zero: Boolean = false, var au
 
 data class CpuState(var a: Int, var b: Int, var c: Int, var d: Int, var e: Int, var h: Int, var l: Int, var stackPointer: Int, var programCounter: Int, var cycles: Long, var flags: CpuFlags);
 
-data class Cpu(var opcode: Int, var state: CpuState);
+data class Cpu(var opcode: Int, var id: String, var state: CpuState);
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
