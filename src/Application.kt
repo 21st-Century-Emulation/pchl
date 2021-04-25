@@ -10,7 +10,7 @@ import io.ktor.features.*
 
 data class CpuFlags(var sign: Boolean = false, var zero: Boolean = false, var auxCarry: Boolean = false, var parity: Boolean = false, var carry: Boolean = false);
 
-data class CpuState(var a: Int, var b: Int, var c: Int, var d: Int, var e: Int, var h: Int, var l: Int, var stackPointer: Int, var programCounter: Int, var cycles: Long, var flags: CpuFlags);
+data class CpuState(var a: Int, var b: Int, var c: Int, var d: Int, var e: Int, var h: Int, var l: Int, var stackPointer: Int, var programCounter: Int, var cycles: Long, var flags: CpuFlags, var interruptsEnabled: Boolean);
 
 data class Cpu(var opcode: Int, var id: String, var state: CpuState);
 
